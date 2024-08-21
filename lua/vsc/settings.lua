@@ -1,10 +1,16 @@
+local keymap = function(mode, keys, func, opts)
+  opts = opts or { noremap = true, silent = true }
+
+  vim.api.nvim_set_keymap(mode, keys, func, opts)
+end
+
 -- Better Navigation
-vim.api.nvim_set_keymap('n', '<C-h>', '<Cmd>lua require("vscode").call("workbench.action.navigateLeft")<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-l>', '<Cmd>lua require("vscode").call("workbench.action.navigateRight")<CR>', { noremap = true, silent = true })
+keymap('n', '<C-h>', '<Cmd>lua require("vscode").call("workbench.action.navigateLeft")<CR>')
+keymap('n', '<C-l>', '<Cmd>lua require("vscode").call("workbench.action.navigateRight")<CR>')
 
 -- Which key 
-vim.api.nvim_set_keymap('n', '<Space>', '<Cmd>lua require("vscode").call("whichkey.show")<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('x', '<Space>', '<Cmd>lua require("vscode").call("whichkey.show")<CR>', { noremap = true, silent = true })
+keymap('n', '<Space>', '<Cmd>lua require("vscode").call("whichkey.show")<CR>')
+keymap('x', '<Space>', '<Cmd>lua require("vscode").call("whichkey.show")<CR>')
 
 -- Symbols
-vim.api.nvim_set_keymap('n', 'cd', '<Cmd>lua require("vscode").call("editor.action.rename")<CR>', { noremap = true, silent = true })
+keymap('n', 'cd', '<Cmd>lua require("vscode").call("editor.action.rename")<CR>')
