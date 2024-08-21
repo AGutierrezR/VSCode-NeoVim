@@ -14,3 +14,9 @@ vim.keymap.set('n', '<Esc>', ':nohlsearch<cr>')
 
 -- paste without overwriting
 vim.keymap.set('v', 'p', 'P')
+
+-- VSCode & NeoVim Configuration
+if vim.g.vscode then
+  require('vsc/settings')
+end
+
