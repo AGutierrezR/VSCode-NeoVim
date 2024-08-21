@@ -1,0 +1,30 @@
+{
+  /*
+   * VSCode + Neovim Configurations
+  **/
+  "vscode-neovim.compositeKeys": {
+    "jj": {
+      "command": "vscode-neovim.escape"
+    }
+  },
+  "whichkey.bindingOverrides": [
+    {
+      "keys": "f.c",
+      "name": "Create file",
+      "type": "command",
+      "command": "extension.advancedNewFile"
+    },
+    {
+      "keys": "f.R",
+      "name": "Rename file",
+      "type": "command",
+      "command": "file-browser.rename"
+    },
+    {
+      "keys": "f.r",
+      "name": "Search relative file",
+      "type": "command",
+      "command": "file-browser.open"
+    }
+  ]
+} 
