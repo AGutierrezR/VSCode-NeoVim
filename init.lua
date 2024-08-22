@@ -19,5 +19,5 @@ require("config.lazy")
 
 -- VSCode & NeoVim Configuration
 if vim.g.vscode then
-  require('vsc/settings')
+  require('vsc/keymaps')
 end

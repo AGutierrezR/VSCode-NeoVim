@@ -14,3 +14,5 @@ keymap('x', '<Space>', '<Cmd>lua require("vscode").call("whichkey.show")<CR>')
 
 -- Symbols
 keymap('n', 'cd', '<Cmd>lua require("vscode").call("editor.action.rename")<CR>')
+keymap('n', 'gs', '<Cmd>lua require("vscode").call("workbench.action.gotoSymbol")<CR>')
+keymap('n', 'gS', '<Cmd>lua require("vscode").call("workbench.action.showAllSymbols")<CR>')
