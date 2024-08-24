@@ -30,7 +30,7 @@ return {
         delete = "ds",
         find = "yf",
         find_left = "yF",
-        highlight = "vs",
+        -- highlight = "vs",
         replace = "cs",
         update_n_lines = "",
       },
