@@ -7,7 +7,28 @@
       "command": "vscode-neovim.escape"
     }
   },
-  "whichkey.bindingOverrides": [
+  /*
+   * WhichKey Configurations
+  **/
+  "whichkey.bindingOverrides":[
+    {
+      "keys": "f.f",
+      "position": "-1"
+    },
+    {
+      "keys": "f.S",
+      "position": "-1"
+    },
+    {
+      "keys": "f.T",
+      "position": "-1"
+    },
+    {
+      "keys": "f.s",
+      "name": "Go to file",
+      "type": "command",
+      "command": "workbench.action.quickOpen"
+    },
     {
       "keys": "f.c",
       "name": "Create file",
@@ -15,7 +36,7 @@
       "command": "extension.advancedNewFile"
     },
     {
-      "keys": "f.R",
+      "keys": "f.r",
       "name": "Rename file",
       "type": "command",
       "command": "file-browser.rename"
@@ -26,5 +47,5 @@
       "type": "command",
       "command": "file-browser.open"
     }
-  ]
+  ] 
 } 
