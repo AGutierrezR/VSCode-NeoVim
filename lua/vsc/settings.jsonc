@@ -724,6 +724,27 @@
           "command": "git.init"
         },
         {
+          "key": "l",
+          "name": "Pull",
+          "icon": "repo-pull",
+          "type": "command",
+          "command": "magit.pulling"
+        },
+        {
+          "key": "p",
+          "name": "Push",
+          "icon": "repo-push",
+          "type": "command",
+          "command": "magit.pushing"
+        },
+        {
+          "key": "P",
+          "name": "Push Force",
+          "icon": "repo-push",
+          "type": "command",
+          "command": "git.pushForce"
+        },
+        {
           "key": "m",
           "name": "Magit dispatch",
           "icon": "repo",
@@ -802,6 +823,13 @@
           "icon": "file",
           "type": "command",
           "command": "workbench.action.quickOpen"
+        },
+        {
+          "key": "s",
+          "name": "+Switch opened project",
+          "icon": "project",
+          "type": "command",
+          "command": "workbench.action.quickSwitchWindow"
         },
         {
           "key": "p",
@@ -927,6 +955,13 @@
           "icon": "file",
           "type": "command",
           "command": "fuzzySearch.activeTextEditorWithCurrentSelection"
+        },
+        {
+          "key": "q",
+          "name": "Quick Search in project",
+          "icon": "search",
+          "type": "command",
+          "command": "workbench.action.quickTextSearch"
         },
         {
           "key": "J",
@@ -1260,35 +1295,6 @@
           ]
         },
         {
-          "key": "i",
-          "name": "+Image preview",
-          "icon": "eye",
-          "type": "transient",
-          "bindings": [
-            {
-              "key": "+",
-              "name": "Zoom in",
-              "icon": "zoom-in",
-              "type": "command",
-              "command": "imagePreview.zoomIn"
-            },
-            {
-              "key": "-",
-              "name": "Zoom out",
-              "icon": "zoom-out",
-              "type": "command",
-              "command": "imagePreview.zoomOut"
-            },
-            {
-              "key": "=",
-              "name": "Zoom in",
-              "icon": "zoom-in",
-              "type": "command",
-              "command": "imagePreview.zoomIn"
-            }
-          ]
-        },
-        {
           "key": "x",
           "name": "+Font",
           "icon": "case-sensitive",
@@ -1408,6 +1414,50 @@
               "command": "editor.unfoldRecursively"
             }
           ]
+        }
+      ]
+    },
+    {
+      "key": "F",
+      "name": "+Frame",
+      "icon": "window",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "n",
+          "name": "Duplicate workspace in new frame",
+          "icon": "window",
+          "type": "command",
+          "command": "workbench.action.duplicateWorkspaceInNewWindow"
+        },
+        {
+          "key": "o",
+          "name": "Switch frame",
+          "icon": "multiple-windows",
+          "type": "command",
+          "command": "workbench.action.quickSwitchWindow"
+        },
+        {
+          "key": "N",
+          "name": "Open new empty frame",
+          "icon": "empty-window",
+          "type": "command",
+          "command": "workbench.action.newWindow"
+        }
+      ]
+    },
+    {
+      "key": "T",
+      "name": "+UI Toggles",
+      "icon": "settings",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "s",
+          "name": "Toggle Editor sticky scroll",
+          "icon": "pin",
+          "type": "command",
+          "command": "editor.action.toggleStickyScroll"
         }
       ]
     }
