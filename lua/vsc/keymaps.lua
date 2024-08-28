@@ -1,16 +1,25 @@
 local keymap = function(mode, keys, func, opts)
   opts = opts or { noremap = true, silent = true }
 
-  vim.api.nvim_set_keymap(mode, keys, func, opts)
+  if type(mode) == 'string' then
+    vim.api.nvim_set_keymap(mode, keys, func, opts)
+  elseif type(mode) == 'table' then
+    for _, m in ipairs(mode) do
+      vim.api.nvim_set_keymap(m, keys, func, opts)
+    end
+  end
 end
 
 -- Better Navigation
 keymap('n', '<C-h>', '<Cmd>lua require("vscode").call("workbench.action.navigateLeft")<CR>')
 keymap('n', '<C-l>', '<Cmd>lua require("vscode").call("workbench.action.navigateRight")<CR>')
 
+keymap('n', 'gl', ':HopLineStart<CR>')
+keymap({ 'n', 'x', 'o' }, 's', ':HopChar1<CR>')
+
 -- Which key 
-keymap('n', '<Space>', '<Cmd>lua require("vscode").call("whichkey.show")<CR>')
-keymap('x', '<Space>', '<Cmd>lua require("vscode").call("whichkey.show")<CR>')
+keymap({ 'n', 'x' }, '<Space>', '<Cmd>lua require("vscode").call("whichkey.show")<CR>')
+-- keymap('x', '<Space>', '<Cmd>lua require("vscode").call("whichkey.show")<CR>')
 
 -- Symbols
 keymap('n', 'cd', '<Cmd>lua require("vscode").call("editor.action.rename")<CR>')
