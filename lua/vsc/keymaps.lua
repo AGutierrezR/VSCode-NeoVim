@@ -14,7 +14,7 @@ end
 keymap('n', '<C-h>', '<Cmd>lua require("vscode").call("workbench.action.navigateLeft")<CR>')
 keymap('n', '<C-l>', '<Cmd>lua require("vscode").call("workbench.action.navigateRight")<CR>')
 
-keymap('n', 'gl', ':HopLineStart<CR>')
+keymap('n', 'gl', ':HopLine<CR>')
 keymap({ 'n', 'x', 'o' }, 's', ':HopChar1<CR>')
 
 -- Which key 
