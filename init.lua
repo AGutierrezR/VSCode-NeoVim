@@ -12,6 +12,8 @@ vim.opt.smartcase = true
 -- clear search highlighting
 vim.keymap.set('n', '<Esc>', ':nohlsearch<cr>')
 
+vim.opt.backspace = 'indent,eol,start'
+
 -- paste without overwriting
 vim.keymap.set('v', 'p', 'P')
 
