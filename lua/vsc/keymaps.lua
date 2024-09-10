@@ -15,7 +15,10 @@ keymap('n', '<C-h>', '<Cmd>lua require("vscode").call("workbench.action.navigate
 keymap('n', '<C-l>', '<Cmd>lua require("vscode").call("workbench.action.navigateRight")<CR>')
 
 keymap('n', 'gl', ':HopLine<CR>')
-keymap({ 'n', 'x', 'o' }, 's', ':HopChar1<CR>')
+keymap({ 'n', 'v', 'x', 'o' }, 's', ':HopChar1<CR>')
+
+keymap({ 'n', 'v' }, '<C-o>', '<Cmd>lua require("vscode").call("workbench.action.navigateBack")<CR>')
+keymap({ 'n', 'v' }, '<C-i>', '<Cmd>lua require("vscode").call("workbench.action.navigateForward")<CR>')
 
 -- Which key 
 keymap({ 'n', 'x' }, '<Space>', '<Cmd>lua require("vscode").call("whichkey.show")<CR>')
@@ -25,3 +28,7 @@ keymap({ 'n', 'x' }, '<Space>', '<Cmd>lua require("vscode").call("whichkey.show"
 keymap('n', 'cd', '<Cmd>lua require("vscode").call("editor.action.rename")<CR>')
 keymap('n', 'gs', '<Cmd>lua require("vscode").call("workbench.action.gotoSymbol")<CR>')
 keymap('n', 'gS', '<Cmd>lua require("vscode").call("workbench.action.showAllSymbols")<CR>')
+
+keymap({'n', 'x'}, 'Y', '"+y')
+keymap({"v", "n" }, ">", ">gv")
+keymap({"v", "n" }, "<", "<gv")
