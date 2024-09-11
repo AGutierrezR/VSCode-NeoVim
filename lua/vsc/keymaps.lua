@@ -20,6 +20,10 @@ keymap({ 'n', 'v', 'x', 'o' }, 's', ':HopChar1<CR>')
 keymap({ 'n', 'v' }, '<C-o>', '<Cmd>lua require("vscode").call("workbench.action.navigateBack")<CR>')
 keymap({ 'n', 'v' }, '<C-i>', '<Cmd>lua require("vscode").call("workbench.action.navigateForward")<CR>')
 
+keymap('n', '[d', '<Cmd>lua require("vscode").call("editor.action.marker.prevInFiles")<CR>')
+keymap('n', ']d', '<Cmd>lua require("vscode").call("editor.action.marker.nextInFiles")<CR>')
+
+
 -- Which key 
 keymap({ 'n', 'x' }, '<Space>', '<Cmd>lua require("vscode").call("whichkey.show")<CR>')
 -- keymap('x', '<Space>', '<Cmd>lua require("vscode").call("whichkey.show")<CR>')
