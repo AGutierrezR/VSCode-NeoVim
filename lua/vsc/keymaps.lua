@@ -10,6 +10,16 @@ local keymap = function(mode, keys, func, opts)
   end
 end
 
+-- Move lines in visual mode
+keymap("v", "J", ":m '>+1<CR>gv=gv")
+keymap("v", "K", ":m '<-2<CR>gv=gv")
+
+-- Better join lines
+keymap("n", "J", "mzJ`z");
+
+-- Better o in visual mode for VSCode
+keymap('v', 'o', 'ozz')
+
 -- Better Navigation
 keymap('n', '<C-h>', '<Cmd>lua require("vscode").call("workbench.action.navigateLeft")<CR>')
 keymap('n', '<C-l>', '<Cmd>lua require("vscode").call("workbench.action.navigateRight")<CR>')
