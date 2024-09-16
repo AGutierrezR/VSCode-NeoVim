@@ -10,8 +10,8 @@ return {
             a = "@function.outer", 
             i = "@function.inner" 
           }),
-          c = spec_treesitter({ 
-            a = "@class.outer", 
+          k = spec_treesitter({ 
+            a = "@class.outer",
             i = "@class.inner" 
           }),
           o = spec_treesitter({
