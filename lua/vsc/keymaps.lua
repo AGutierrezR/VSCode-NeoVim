@@ -18,7 +18,7 @@ keymap("v", "K", ":m '<-2<CR>gv=gv")
 keymap("n", "J", "mzJ`z");
 
 -- Better o in visual mode for VSCode
-keymap('v', 'o', 'ozz')
+keymap('x', 'o', 'ozz')
 
 -- Better Navigation
 keymap('n', '<C-h>', '<Cmd>lua require("vscode").call("workbench.action.navigateLeft")<CR>')
