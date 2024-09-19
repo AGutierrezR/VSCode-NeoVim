@@ -1,6 +1,7 @@
 {
   "flash.nvim": { "branch": "main", "commit": "34c7be146a91fec3555c33fe89c7d643f6ef5cf1" },
   "hardtime.nvim": { "branch": "main", "commit": "6513bf42cd9261669d1ee41ff8b4065dfdc53a09" },
+  "harpoon": { "branch": "master", "commit": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3" },
   "hop.nvim": { "branch": "master", "commit": "8f51ef02700bb3cdcce94e92eff16170a6343c4f" },
   "lazy.nvim": { "branch": "main", "commit": "077102c5bfc578693f12377846d427f49bc50076" },
   "mini.ai": { "branch": "main", "commit": "a9b992b13d22a8db8df6beac25afa59a10b5584d" },

@@ -2,6 +2,9 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- Make line numbers default
+vim.opt.relativenumber = true
+
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
