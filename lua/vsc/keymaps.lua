@@ -50,12 +50,3 @@ keymap({"v", "n" }, "<", "<gv")
 -- undo/redo via vscode
 keymap('n', 'u', '<Cmd>lua require("vscode").call("undo")<CR>')
 keymap('n', '<C-r>', '<Cmd>lua require("vscode").call("redo")<CR>')
-
-
-vim.api.nvim_create_user_command(
-  'UndoTreeView',
-  function()
-    require('vscode').call('undoTreeView.focus')
-  end,
-  {}
-)
