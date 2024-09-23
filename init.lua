@@ -21,7 +21,9 @@ vim.keymap.set('v', 'p', 'P')
 -- delete single character without copying into register
 vim.keymap.set('n', 'x', '"_x', opts)
 
+-- Required basic settings
 require("config.lazy")
+require("keymaps")
 
 -- VSCode & NeoVim Configuration
 if vim.g.vscode then
