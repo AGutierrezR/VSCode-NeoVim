@@ -736,6 +736,34 @@
       ]
     },
     {
+      "key": "h",
+      "name": "Harpoon",
+      "type": "bindings",
+      "bindings": [
+        {
+          "key": "h",
+          "name": "Harpoon List",
+          "icon": "harpoon",
+          "type": "command",
+          "command": "vscode-harpoon.editorQuickPick"
+        },
+        {
+          "key": "a",
+          "name": "Harpoon Add",
+          "icon": "harpoon",
+          "type": "command",
+          "command": "vscode-harpoon.addEditor"
+        },
+        {
+          "key": "e",
+          "name": "Harpoon Edit",
+          "icon": "harpoon",
+          "type": "command",
+          "command": "vscode-harpoon.editEditors"
+        }
+      ]
+    },
+    {
       "key": "i",
       "name": "+Insert",
       "icon": "add",

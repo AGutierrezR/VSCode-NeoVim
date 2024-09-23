@@ -38,6 +38,12 @@ return {
               ["[F"] = "@function.outer",
               ["[]"] = "@class.outer",
             },
+            goto_next = {
+              ["]d"] = "@conditional.inner",
+            },
+            goto_previous = {
+              ["[d"] = "@conditional.inner",
+            }
           },
         }
       })
