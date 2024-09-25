@@ -9,24 +9,16 @@ vim.opt.relativenumber = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
--- clear search highlighting
-vim.keymap.set('n', '<Esc>', ':nohlsearch<cr>')
-
 -- Improve backspace behavior
 vim.opt.backspace = 'indent,eol,start'
 
--- paste without overwriting
-vim.keymap.set('v', 'p', 'P')
-
--- delete single character without copying into register
-vim.keymap.set('n', 'x', '"_x', opts)
-
 -- Required basic settings
 require("config.lazy")
-require("keymaps")
+require('user.functions')
+require("user.keymaps")
 
 -- VSCode & NeoVim Configuration
 if vim.g.vscode then
-  require('vsc/keymaps')
-  require('vsc/commands')
+  require('user.vscode.keymaps')
+  require('user.vscode_commands')
 end

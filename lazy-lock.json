@@ -1,7 +1,6 @@
 {
   "flash.nvim": { "branch": "main", "commit": "34c7be146a91fec3555c33fe89c7d643f6ef5cf1" },
   "hardtime.nvim": { "branch": "main", "commit": "6513bf42cd9261669d1ee41ff8b4065dfdc53a09" },
-  "harpoon": { "branch": "master", "commit": "1bc17e3e42ea3c46b33c0bbad6a880792692a1b3" },
   "hop.nvim": { "branch": "master", "commit": "8f51ef02700bb3cdcce94e92eff16170a6343c4f" },
   "lazy.nvim": { "branch": "main", "commit": "077102c5bfc578693f12377846d427f49bc50076" },
   "mini.ai": { "branch": "main", "commit": "a9b992b13d22a8db8df6beac25afa59a10b5584d" },
@@ -9,6 +8,7 @@
   "nui.nvim": { "branch": "main", "commit": "b58e2bfda5cea347c9d58b7f11cf3012c7b3953f" },
   "nvim-treesitter": { "branch": "master", "commit": "8724e7d028ba11604dde94dc4be63f70cccf16e0" },
   "nvim-treesitter-textobjects": { "branch": "master", "commit": "41e3abf6bfd9a9a681eb1f788bdeba91c9004b2b" },
+  "nvim-various-textobjs": { "branch": "main", "commit": "c2e4038d187a576d99fadd38a2f58aae5bfda294" },
   "plenary.nvim": { "branch": "master", "commit": "ec289423a1693aeae6cd0d503bac2856af74edaa" },
   "vim-repeat": { "branch": "master", "commit": "65846025c15494983dafe5e3b46c8f88ab2e9635" }
 }

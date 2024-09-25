@@ -1,0 +1,87 @@
+[ 
+  // Insert Mode
+  {
+    "key": "ctrl+y",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-y>"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-l>"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-e>"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-x>"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-p>"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-n>"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-z>"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-h>"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-m>"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-i>"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-k>"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-b>"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-g>"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'insert'",
+    "args": "<C-q>"
+  }
+]
