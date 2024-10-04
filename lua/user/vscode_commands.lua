@@ -38,3 +38,19 @@ vim.api.nvim_create_user_command(
   end,
   {}
 )
+
+vim.api.nvim_create_user_command(
+  'CopyRelativeFilePath',
+  function()
+    require('vscode').action('copyRelativeFilePath')
+  end,
+  {}
+)
+
+vim.api.nvim_create_user_command(
+  'CopyFilePath',
+  function()
+    require('vscode').action('copyFilePath')
+  end,
+  {}
+)
