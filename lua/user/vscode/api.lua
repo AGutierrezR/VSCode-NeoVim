@@ -37,6 +37,8 @@ function GoToSymbol() vscode.call("workbench.action.gotoSymbol") end
 function ShowAllSymbols() vscode.call("workbench.action.showAllSymbols") end
 function JumpToOutline() vscode.call("breadcrumbs.focusAndSelect") end
 
+function GoToLastEditLocation() vscode.call('workbench.action.navigateToLastEditLocation') end
+
 -- Extensions Utils
 function WhichkeyShow() vscode.call('whichkey.show') end
 
@@ -49,3 +51,9 @@ function LazyGitOpen() vscode.call("lazygit.openLazygit") end
 function AdvanceCreateNewFile() vscode.call("extension.advancedNewFile") end
 
 function FileBrowserOpen() vscode.call("file-browser.open") end
+
+function CreateFoldingRangeFromSelection() vscode.call("editor.createFoldingRangeFromSelection") end
+function RemoveManualFondingRanges() vscode.call("editor.removeManualFoldingRanges") end
+function Fold() vscode.call("editor.fold") end
+function Unfold() vscode.call("editor.unfold") end
+function ToggleFold() vscode.call("editor.toggleFold") end
