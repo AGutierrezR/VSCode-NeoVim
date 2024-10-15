@@ -45,9 +45,6 @@ return {
               ['it'] = '@return.inner', -- Not working in Javascript
               ['at'] = '@return.outer', -- Not working in Javascript
             },
-            selection_modes = {
-              -- ['@function.outer'] = '<c-v>'
-            },
           },
           move = {
             enable = true,

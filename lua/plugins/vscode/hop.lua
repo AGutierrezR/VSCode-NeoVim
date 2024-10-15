@@ -1,7 +1,9 @@
 return {
   'smoka7/hop.nvim',
   version = "*",
-  opts = {
-    keys = 'etovxqpdygfblzhckisuran'
-  }
+  config = function()
+    require('hop').setup( { keys = 'etovxqpdygfblzhckisuran' } )
+    
+    -- vim.keymap.set('n', 'gw', vim.cmd.HopWord, {})
+  end
 }
