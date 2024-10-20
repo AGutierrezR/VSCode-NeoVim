@@ -92,7 +92,9 @@ return {
           },
         },
         ts_ls = {},
-        jsonls = {}
+        jsonls = {},
+        cssls = {},
+        emmet_ls = {}
       }
 
       -- Ensure the servers and tools above are installed
