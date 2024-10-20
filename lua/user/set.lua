@@ -26,6 +26,12 @@ vim.opt.smartindent = true
 -- Change undodir to undotree folder
 vim.opt.undodir = os.getenv('HOME') .. '/.vim/undodir'
 
+-- tabs & indentation
+vim.opt.tabstop = 2 -- 2 spaces fot tab (prettier default)
+vim.opt.shiftwidth = 2 -- 2 spaces for indent width
+vim.opt.expandtab = true -- expand tab to space
+vim.opt.autoindent = true -- copy indent from current line when starting new one
+
 -- Highlight when yanking (copying) text
 -- See `:help vim.highlight.on_yank()`
 vim.api.nvim_create_autocmd('TextYankPost', {
@@ -35,25 +41,4 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
