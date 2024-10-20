@@ -15,14 +15,5 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-if vim.g.vscode then
-  require("lazy").setup({
-    { import = "plugins.vscode" }
-  })
-else
-  require("lazy").setup({
-    { import = "plugins" },
-    { import = "plugins.vscode" }
-  })
-end
+require("lazy").setup('plugins')
 
