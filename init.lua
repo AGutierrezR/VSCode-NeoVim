@@ -14,7 +14,5 @@ require("config.lazy")
 if vim.g.vscode then
   require('user.vscode.keymaps')
   require('user.vscode_commands')
-else
-  require('user.plugin_config')
 end
 

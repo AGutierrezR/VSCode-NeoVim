@@ -1,1 +1,0 @@
-require('user.plugin_config.telescope')
