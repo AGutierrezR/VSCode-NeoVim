@@ -24,6 +24,7 @@ vim.opt.backspace = 'indent,eol,start'
 vim.opt.smartindent = true
 
 -- Change undodir to undotree folder
+vim.opt.undofile = true
 vim.opt.undodir = os.getenv('HOME') .. '/.vim/undodir'
 
 -- tabs & indentation

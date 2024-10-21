@@ -7,7 +7,7 @@ keymap('i', 'jk', '<Esc>', { desc = 'Exit insert mode with jk' } )
 keymap('n', 'Q', '<nop>')
 
 -- clear search highlighting
-keymap('n', '<Esc>', ':nohlsearch<cr>', { desc = 'Clear search highlighting' })
+keymap('n', '<Esc>', ':nohlsearch<cr>', { silent = true, desc = 'Clear search highlighting' })
 
 -- search in file what is selected in visual mode
 keymap('v', '*', '"6y/\\V<C-r>6<CR>N', { desc = 'Search forward in file what is selected in visual mode' })
@@ -37,4 +37,6 @@ keymap('n', 'x', '"_x')
 
 -- Switch to last accessed buffer
 keymap('n', 'ga', '<cmd>b#<CR>')
+
+keymap('n', '<C-k>', 'k')
 

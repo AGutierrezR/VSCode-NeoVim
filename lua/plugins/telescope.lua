@@ -9,7 +9,17 @@ return {
       { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
     },
     config = function()
+      local actions = require('telescope.actions')
+
       require('telescope').setup({
+        defaults = {
+          mappings = {
+            i = {
+              ['<C-k'] = actions.move_selection_previous,
+              ['<C-j'] = actions.move_selection_next,
+            }
+          }
+        },
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown({})
@@ -20,6 +30,7 @@ return {
       -- Enable telescope extension if they are installed
       pcall(require('telescope').load_extension('ui-select'))
       pcall(require('telescope').load_extension('fzf'))
+      pcall(require('telescope').load_extension('noice'))
 
       -- See `:help telescope.builtin`
       local builtin = require('telescope.builtin')
