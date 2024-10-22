@@ -23,21 +23,28 @@ return {
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown({})
+          },
+          fzf = {
+            fuzzy = true,                    -- false will only do exact matching
+            override_generic_sorter = false,  -- override the generic sorter
+            override_file_sorter = false,     -- override the file sorter
+            case_mode = "respect_case",        -- or "ignore_case" or "respect_case"
+            -- the default case_mode is "smart_case"
           }
         }
       })
 
       -- Enable telescope extension if they are installed
-      pcall(require('telescope').load_extension('ui-select'))
-      pcall(require('telescope').load_extension('fzf'))
-      pcall(require('telescope').load_extension('noice'))
+      require('telescope').load_extension('ui-select')
+      require('telescope').load_extension('fzf')
+      require('telescope').load_extension('noice')
 
       -- See `:help telescope.builtin`
       local builtin = require('telescope.builtin')
-      vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = 'Search File' })
-      vim.keymap.set('n', '<leader>/', builtin.live_grep, { desc = 'Search by Grep' })
-      vim.keymap.set('n', '<leader>b', builtin.buffers, { desc = 'Find existing buffers' })
-      vim.keymap.set('n', '<leader>?', builtin.commands, { desc = 'Find existing buffers' })
+      -- vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = 'Search File' })
+      -- vim.keymap.set('n', '<leader>/', builtin.live_grep, { desc = 'Search by Grep' })
+      -- vim.keymap.set('n', '<leader>b', builtin.buffers, { desc = 'Find existing buffers' })
+      -- vim.keymap.set('n', '<leader>?', builtin.commands, { desc = 'Find Commands' })
 
     end
   },

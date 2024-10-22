@@ -28,14 +28,14 @@ return {
             vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = 'LSP: ' .. desc })
           end
 
-          map('gd', require('telescope.builtin').lsp_definitions, 'Goto Definition')
-          map('gi', require('telescope.builtin').lsp_implementations, 'Goto Implementation')
-          map('gr', require('telescope.builtin').lsp_references, 'Goto References')
+          map('gd', require('fzf-lua').lsp_definitions, 'Goto Definition')
+          map('gi', require('fzf-lua').lsp_implementations, 'Goto Implementation')
+          map('gr', require('fzf-lua').lsp_references, 'Goto References')
           map('gD', vim.lsp.buf.declaration, '')
           map('K', vim.lsp.buf.hover, '')
           map('<leader>ca', vim.lsp.buf.code_action, 'Code Action')
-          map('<leader>s', require('telescope.builtin').lsp_document_symbols, 'Goto Document Symbols')
-          map('<leader>S', require('telescope.builtin').lsp_dynamic_workspace_symbols, 'GoTo Workspace Symbols')
+          map('<leader>s', require('fzf-lua').lsp_document_symbols, 'Goto Document Symbols')
+          map('<leader>S', require('fzf-lua').lsp_live_workspace_symbols, 'GoTo Workspace Symbols')
 
           -- The following two autocommands are used to highlight references of the
           -- word under your cursor when your cursor rests there for a little while.
