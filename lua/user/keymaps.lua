@@ -40,3 +40,4 @@ keymap('n', 'ga', '<cmd>b#<CR>')
 
 keymap('n', '<C-k>', 'k')
 
+keymap('n', '<C-f>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
