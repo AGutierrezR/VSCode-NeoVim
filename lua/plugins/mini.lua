@@ -31,12 +31,12 @@ return {
     "echasnovski/mini.surround",
     opts = {
       mappings = {
-        add = "gsa",
-        delete = "gsd",
-        find = "gsf",
-        find_left = "gsF",
+        add = "Mr",
+        delete = "Md",
+        replace = "Mr",
+        find = "",
+        find_left = "",
         highlight = "",
-        replace = "gsr",
         update_n_lines = "",
       },
       search_method = "cover_or_next",
