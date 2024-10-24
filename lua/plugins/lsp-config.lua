@@ -36,6 +36,7 @@ return {
           map('<leader>ca', vim.lsp.buf.code_action, 'Code Action')
           map('<leader>s', require('fzf-lua').lsp_document_symbols, 'Goto Document Symbols')
           map('<leader>S', require('fzf-lua').lsp_live_workspace_symbols, 'GoTo Workspace Symbols')
+          map('<leader>r', vim.lsp.buf.rename, 'Rename Symbol')
 
           -- The following two autocommands are used to highlight references of the
           -- word under your cursor when your cursor rests there for a little while.
