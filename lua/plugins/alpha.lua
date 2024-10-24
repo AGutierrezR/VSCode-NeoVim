@@ -19,12 +19,12 @@ return {
 
     -- Set menu
     dashboard.section.buttons.val = {
-      dashboard.button( "e", "   New file" , ":ene <BAR> startinsert <CR>"),
       dashboard.button( "f", "󰮗   Find file", ":FzfLua files<CR>"),
-      dashboard.button( "w", "󱘞   Find word", ":FzfLua live_grep<CR>"),
-      dashboard.button( "r", "󱀸   Recent"   , ":Telescope oldfiles<CR>"),
-      dashboard.button( "R", "󰁯   Restore Session for Current Directory", ":SessionRestore<CR>"),
-      dashboard.button( "q", "󰗼   Quit NVIM", ":q<CR>"),
+      dashboard.button( "n", "   New file" , ":ene <BAR> startinsert <CR>"),
+      dashboard.button( "g", "󱘞   Find word", ":FzfLua live_grep<CR>"),
+      dashboard.button( "r", "󱀸   Recently used files"   , ":Telescope oldfiles<CR>"),
+      dashboard.button( "s", "󰁯   Restore Session for Current Directory", ":SessionRestore<CR>"),
+      dashboard.button( "q", "󰗼   Quit NVIM", ":qa<CR>"),
     }
 
     -- Send config to alpha
