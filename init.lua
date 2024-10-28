@@ -11,4 +11,5 @@ require('user.keymaps')
 -- If Neovim is running in VSCode mode, load additional key mappings specific to VSCode.
 if vim.g.vscode then
   require('editor.keymaps')
+  require('editor.commands')
 end
