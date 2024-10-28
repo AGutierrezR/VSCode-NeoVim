@@ -12,4 +12,5 @@ require('user.keymaps')
 if vim.g.vscode then
   require('editor.keymaps')
   require('editor.commands')
+  require('editor.extensions')
 end
