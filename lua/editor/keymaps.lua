@@ -34,4 +34,4 @@ vim.keymap.set('n', ']d', GoNextErrorInFiles)
 vim.keymap.set('n', 'zg', OpenView)
 
 -- Tmux Like behavior
-vim.keymap.set('n', '<C-a>s', QuickSwitchWindow)
+vim.keymap.set('n', '<C-a>s', SwitchWindow)

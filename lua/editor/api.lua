@@ -20,7 +20,7 @@ function QuickFix() vscode.call("editor.action.quickFix") end
 
 function JumpToOutline() vscode.call("breadcrumbs.focusAndSelect") end
 
-function QuickSwitchWindow() vscode.call("workbench.action.quickSwitchWindow") end
+function SwitchWindow() vscode.call("workbench.action.switchWindow") end
 
 function OpenRecent() vscode.call("workbench.action.openRecent") end
 
